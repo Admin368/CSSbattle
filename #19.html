@@ -1,0 +1,81 @@
+<div id="wrapper">
+	<div id="left2"></div>
+  	<div id="left"></div>
+  <div id="crop-right">
+  	 <div id="right2"></div>
+	<div id="right"></div>
+  </div>
+ 
+	<div id="bottom"></div>
+</div>
+
+<style>
+   #left2{
+    width:100px;
+    height:100px;
+    position:absolute;
+    background:#998235;
+    transform: rotate(45deg);
+    top:64;
+    left:150;
+    z-index:1;
+  }
+  #left{
+    width:100px;
+    height:70px;
+    position:absolute;
+    background:#998235;
+    transform: rotate(0deg);
+    top:114;
+    left:130;
+    z-index:1;
+  }
+  #crop-right{
+    width:200px;
+    height:200px;
+    border:0px solid red;
+    position:fixed;
+    overflow:hidden;
+    top:17px;
+    left:200px;
+    z-index:5;
+  }
+   #right{
+    width:100px;
+    height:100px;
+    position:relative;
+     background:#1A4341;
+    transform: rotate(45deg);
+    clip: rect(0px,200px,100px,0px);
+    top:-24;
+    left:-50;
+    z-index:2;
+  }
+  #right2{
+    width:100px;
+    height:70px;
+    position:relative;
+    background:#1A4341;
+    transform: rotate(0deg);
+    top:97;
+    left:-29;
+    z-index:2;
+  }
+  #bottom{
+    width:100px;
+    height:100px;
+    position:absolute;
+    background:#F3AC3C;
+    transform: rotate(45deg);
+    top:135;
+    left:150;
+    z-index:5;
+  }
+  #wrapper {
+    width: 100vw;
+    height: 100vh;
+    margin:-8px;
+    position:absolute;
+    background: #0B2429;
+    z-index:-1;
+</style>

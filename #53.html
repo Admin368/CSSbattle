@@ -1,0 +1,53 @@
+<div id="wrapper">
+    <div id="circle"></div>
+    <div id="arc"></div>
+    <div id="rectangle"></div>
+</div>
+
+
+<style>
+#arc{
+  width:150px;
+  height:150px;
+  top:50px;
+  left:125px;
+     border-radius:1px 0px 0px 75px;
+  clip: rect(75px, 75px, 1000px, 0px);
+  position:absolute;
+  background:#9AD5FF;
+  z-index:3;
+}
+#rectangle{
+  width:75px;
+  height:125px;
+  background:#F9E492;
+  position:absolute;
+  opacity:10;
+  top:125;
+  left:125;
+  z-index:1;
+}
+ #circle{
+  width: 150px;
+  height:150px;
+  border-radius:50%;
+  background:#4F77FF;
+  position:absolute;
+  margin:0px auto;
+  opacity:10;
+  top:50;
+  left:125;
+  z-index:1;
+}
+#circle #rectangle{
+  background:#9AD5FF;
+}
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin: -8px;
+  background: #19191A;
+  position: absolute;
+  z-index:0;
+}
+</style>
